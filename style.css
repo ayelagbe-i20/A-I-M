@@ -1,0 +1,82 @@
+body, html{
+   margin: 0;
+   padding: 0;
+   height: 100%;
+}
+
+.animated-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff30ff, #fad0c4, #fad0c4, #ff9a9e);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% { 
+       background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.wrapper{
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255);
+
+
+}
+
+ 
+.card{
+    background: #332;
+
+}
+
+.plus{
+    border-radius: 16px;
+    box-shadow: 0 4px px rgba(red);
+    border: 4px solid rgba(red);
+    width: 50px;
+    height: 50px;
+    position: center;
+    transition: rotate(180deg);
+    transition: 0.5s;
+    font-size: 30px;
+    margin: 16px;
+    background: red;
+   
+}
+
+
+
+.plus:hover{
+   transform: rotate(180deg);
+   transition: 0.5s;
+   color: #400;
+   
+}
+
+.card1{
+    border-radius: 10px;
+    box-shadow: 0 4px px rgba(#300);
+    border: 4px solid rgba(#500);
+    width: 25px;
+    height: 25px;
+    margin: 16px ;
+    transition: rotate(45deg);
+    transition: 0.3s;
+}
+
+.card1:hover{
+   transition: rotate(45deg);
+   transition: 0.3s;
+}
+
